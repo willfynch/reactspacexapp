@@ -5,14 +5,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Tapa Dia
 - Pierre Terasson
 - Robin De Ruyck
+- William Finzy
 
 ## Get the project
 ```
 git clone https://github.com/willfynch/reactspacexapp.git
-cd reactspacexapp
+cd reactspacexapp/spacexapp
 ```
 
-## Launch docker
+## First launch with docker
+```
+docker-compose up --build
+```
+
+## Next launches with docker
 ```
 docker-compose up
 ```
