@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Tapa Dia
 - Pierre Terasson
 - Robin De Ruyck
+- William Finzy
 
 ## Get the project
 ```
