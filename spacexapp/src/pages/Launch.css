@@ -1,0 +1,147 @@
+
+
+.cardContainer {
+    position: relative;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.rowImage {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 125px;
+}
+
+.cardImage {
+    position: absolute;
+    top: 25px;
+    width: 150px;
+}
+
+.rowTitle {
+    margin-top: 60px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.rowYearandSite {
+    padding-top: 15px;
+    margin-top: 30px;
+    color: white;
+}
+
+.launchedAtIn {
+    
+    font-size: 1.4rem;
+    
+    
+}
+
+.h4Launched {
+    margin: 15px 0 15px 0;
+    font-weight: 500;
+}
+
+.rowSuccess {
+    padding-top: 30px;
+}
+
+.successIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.successIcon div {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    transform-origin: center;
+    transform: rotate(220deg) scaleY(-1);
+}
+
+.successText {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.noSuccessIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.noSuccessIcon div {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    transform-origin: center;
+    transform: rotate(90deg) scaleY(-1);
+}
+
+.failureDetails {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.spanDetails {
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.rowDetails p {
+    margin-top: 20px;
+    
+}
+
+.spanDetailsLine {
+    width: 100%;
+    height: 5px;
+}
+
+.rowVideo {
+   
+    margin-top: 30px;
+}
+.videoBox {
+    
+    width: 410px;
+    height: 253.75px;
+    
+}
+
+.youtubeVideo {
+    margin-top: 5px;
+}
+
+.spanVideo {
+    font-size: 1.4rem;
+    
+}
+
+.spanVideoLine {
+    width: 10%;
+    height: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.spanSeeMore {
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+.spanFinalLine {
+    width: 100%;
+    height: 15px;
+    margin-top: 30px;
+}
