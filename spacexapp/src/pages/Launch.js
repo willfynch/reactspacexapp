@@ -22,8 +22,7 @@ import YouTube from "react-youtube";
 
 
     componentDidMount() {
-        const filters = [""] // ["flight_number", "mission_name", "details", "links/mission_patch"]
-        APIFetcher.get(`/launches/${this.state.id}`, filters).then(res => {
+        APIFetcher.get(`/launches/${this.state.id}`).then(res => {
             console.log(res);
             this.setState({launches: res, isLoaded: true})
         }).catch(reason =>
@@ -36,15 +35,13 @@ import YouTube from "react-youtube";
 
         if (this.state.isError.length !== 0) return console.log(this.state.isError);
         if (!this.state.isLoaded) return <Loading/>
+
+
         const launch = this.state.launches;
+
         const opts = {
-            height: '243.75',
-            width: '400',
-            paddingTop: '56.25%',
-            playerVars: {
-              // https://developers.google.com/youtube/player_parameters
-              autoplay: 0,
-            },
+            height: '213',
+            width: '350',
           };
   
     
@@ -111,27 +108,7 @@ import YouTube from "react-youtube";
                 <MDBBtn target="_blank" href={launch.links.article_link}>Article</MDBBtn>
             </MDBRow>
             <MDBRow><span className="spanFinalLine blue-gradient"></span></MDBRow>
-                
-           
-                
-            
-            
-            
-            
-            
-            
-            
-
-           
-
-           
-
-           
-
-            
-
-            
-            
+                            
         </MDBCol>
     )
 }
