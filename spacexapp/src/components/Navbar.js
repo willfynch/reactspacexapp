@@ -1,6 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import {
-    MDBContainer,
     MDBNavbar,
     MDBNavbarBrand,
     MDBNavbarNav,
@@ -8,26 +8,57 @@ import {
     MDBCollapse,
     MDBNavItem,
     MDBNavLink,
-    MDBIcon
+  
 } from 'mdbreact';
 
-const NavBar = () => (
+class NavBar extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            isOpen: false
+          };
+    }
+      
+      toggleCollapse = () => {
+        this.setState({ isOpen: !this.state.isOpen });
+      }
+
+    render(){
+    return(
     <div>
         <header>
-            <MDBNavbar style={{backgroundColor: 'black'}} dark expand="md" scrolling fixed="top">
-                <MDBCollapse navbar>
-                    <MDBNavbarNav>
-                        <MDBNavItem active>
+            <MDBNavbar color="white" light expand="md" scrolling fixed="top">
+            <MDBNavbarBrand >
+                <strong className="white-text">
+                    <Link to="/launches"> 
+                    <img style={{width:"50%"}}
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg"
+                        alt="SpaceX Logo"
+                    />
+                    </Link>
+                    
+                
+                </strong>
+            </MDBNavbarBrand>
+            <MDBNavbarToggler onClick={this.toggleCollapse} />
+                <MDBCollapse  isOpen={this.state.isOpen} navbar>
+                    <MDBNavbarNav right>
+                        <MDBNavItem>
                             <MDBNavLink to="/launches">Launches</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
                             <MDBNavLink to="/capsules">Capsules</MDBNavLink>
                         </MDBNavItem>
+
+
+
+
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBNavbar>
         </header>
-    </div>
-)
+    </div>)}
+}
 
 export default NavBar;

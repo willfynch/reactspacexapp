@@ -7,7 +7,11 @@ import NotFoundPage from "./pages/NotFound/NotFoundPage";
 import NavBar from "./components/Navbar";
 import {MDBContainer} from "mdbreact";
 import Launches from "./pages/Launches";
+<<<<<<< HEAD
 import Capsules from "./pages/Capsules"
+=======
+import Launch from "./pages/Launch";
+>>>>>>> feature
 
 export default function App() {
     return (
@@ -16,8 +20,21 @@ export default function App() {
             <MDBContainer style={{height: 1300}} className="text-center mt-5 pt-5">
                 <Switch>
                     <Route exact path={['/', '/launches']} component={Launches}/>
+<<<<<<< HEAD
                     <Route exact path={'/launches/:id'} component={Launch}/>
                     <Route exact path='/capsules' component={Capsules}/>
+=======
+
+                    <Route exact path={'/launches/:id'} 
+                    component={Launch}
+                    
+                    />
+
+
+
+
+                    <Route path='/capsules' component={Capsules}/>
+>>>>>>> feature
                     <Route component={NotFoundPage}/>
                 </Switch>
             </MDBContainer>
@@ -29,6 +46,3 @@ function Capsule() {
     return <h2>Capsules</h2>;
 }
 
-function Launch() {
-    return <h2>Un lancement</h2>;
-}
