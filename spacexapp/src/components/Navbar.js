@@ -27,8 +27,8 @@ class NavBar extends React.Component {
     render(){
     return(
     <div>
-        <header>
-            <MDBNavbar color="white" light expand="md" scrolling fixed="top">
+        <header className="d-flex flex-row">
+            <MDBNavbar color="white" light expand="md" scrolling fixed="top" >
             <MDBNavbarBrand >
                 <strong className="white-text">
                     <Link to="/launches"> 

@@ -24,6 +24,7 @@ export default function App() {
                     <Route component={NotFoundPage}/>
                 </Switch>
             </MDBContainer>
+            
         </>
     );
 }
