@@ -31,7 +31,7 @@ class NavBar extends React.Component {
             <MDBNavbar color="white" light expand="md" scrolling fixed="top" >
             <MDBNavbarBrand >
                 <strong className="white-text">
-                    <Link to="/launches"> 
+                    <Link to="/"> 
                     <img style={{width:"50%"}}
                         src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg"
                         alt="SpaceX Logo"
