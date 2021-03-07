@@ -26,23 +26,25 @@ class NavBar extends React.Component {
 
     render(){
     return(
-    <div>
-        <header className="d-flex flex-row">
-            <MDBNavbar color="white" light expand="md" scrolling fixed="top" >
-            <MDBNavbarBrand >
-                <strong className="white-text">
-                    <Link to="/"> 
-                    <img style={{width:"50%"}}
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg"
-                        alt="SpaceX Logo"
-                    />
-                    </Link>
-                    
-                
-                </strong>
-            </MDBNavbarBrand>
-            <MDBNavbarToggler onClick={this.toggleCollapse} />
+    
+        
+            <MDBNavbar color="white" light expand="md" scrolling fixed="top" className="d-flex flex-row justify-content-space">
+
+                <MDBNavbarBrand >
+                        <Link to="/"> 
+                        <img style={{width:"125px"}}
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg"
+                            alt="SpaceX Logo"
+                        />
+                        </Link>               
+                </MDBNavbarBrand>
+
+
+                <MDBNavbarToggler onClick={this.toggleCollapse} />
+
+
                 <MDBCollapse  isOpen={this.state.isOpen} navbar>
+
                     <MDBNavbarNav right>
                         <MDBNavItem>
                             <MDBNavLink to="/launches">Launches</MDBNavLink>
@@ -50,15 +52,14 @@ class NavBar extends React.Component {
                         <MDBNavItem>
                             <MDBNavLink to="/capsules">Capsules</MDBNavLink>
                         </MDBNavItem>
-
-
-
-
                     </MDBNavbarNav>
+
                 </MDBCollapse>
+
+
             </MDBNavbar>
-        </header>
-    </div>)}
+        
+    )}
 }
 
 export default NavBar;
