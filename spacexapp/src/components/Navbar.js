@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link as Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {
-    MDBContainer,
     MDBNavbar,
     MDBNavbarBrand,
     MDBNavbarNav,
@@ -9,7 +8,6 @@ import {
     MDBCollapse,
     MDBNavItem,
     MDBNavLink,
-    MDBIcon,
   
 } from 'mdbreact';
 
@@ -36,6 +34,7 @@ class NavBar extends React.Component {
                     <Link to="/launches"> 
                     <img style={{width:"50%"}}
                         src="https://upload.wikimedia.org/wikipedia/commons/d/de/SpaceX-Logo.svg"
+                        alt="SpaceX Logo"
                     />
                     </Link>
                     

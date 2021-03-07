@@ -1,10 +1,7 @@
-import React, {useState} from "react";
-import {useEffect} from "react";
+import React from "react";
 import Loading from "../components/Loading";
 import APIFetcher from "../services/APIFetcher";
-import LaunchCard from "../components/LaunchCard";
-import { useLocation, useParams } from "react-router";
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle,MDBCol, MDBRow } from 'mdbreact';
+import { MDBBtn, MDBCol, MDBRow } from 'mdbreact';
 import "./Launch.css"
 import YouTube from "react-youtube";
 
@@ -23,31 +20,6 @@ import YouTube from "react-youtube";
         }
     }
 
-    /*const {id} = useParams();
-    const [launch, setLaunch] = useState([]);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [error, setReason] = useState(null);
-
-    useEffect (() => {
-        let filters = [""];
-            
-    
-
-        APIFetcher.get(`/launches/${id}`, filters).then(res => {
-            console.log(res);
-            setLaunch(res);
-            setIsLoaded(true)
-        }).catch(reason => setReason(reason));
-
-        console.log("Hello" + "\n" + launch.links.mission_patch_small);    
-        
-        return () => {
-            setIsLoaded(false);
-        }
-
-    }
-        , []
-    )*/
 
     componentDidMount() {
         const filters = [""] // ["flight_number", "mission_name", "details", "links/mission_patch"]
@@ -82,7 +54,9 @@ import YouTube from "react-youtube";
             <MDBRow className="rowImage blue-gradient justify-content-center">
                 <img 
                     className="cardImage" 
-                    src={launch.links.mission_patch_small}/>
+                    src={launch.links.mission_patch_small}
+                    alt = "Mission Patch"
+                    />
             </MDBRow>
 
             <MDBRow className=" rowTitle justify-content-center">
