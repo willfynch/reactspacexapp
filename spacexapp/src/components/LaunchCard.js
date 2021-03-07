@@ -9,7 +9,7 @@ const LaunchCard = (props) => {
                 <MDBCardImage className="img-fluid" src={launch.links.mission_patch} waves />
                 <MDBCardBody>
                     <MDBCardTitle>{launch.mission_name}</MDBCardTitle>
-                    <MDBBtn href="#">Consulter</MDBBtn>
+                    <MDBBtn href="#">Consult</MDBBtn>
                 </MDBCardBody>
             </MDBCard>
         </MDBCol>
