@@ -23,7 +23,7 @@ class CapsuleCard extends Component {
                                 capsule.details ? capsule.details : 'No details about this capsule.'
                             }
                         </MDBCardText>
-                        <MDBBtn color="light-green" onClick={e => {showModal(capsule)}} >Consulter</MDBBtn>
+                        <MDBBtn color="light-green" onClick={e => {showModal(capsule)}} >Consult</MDBBtn>
                     </MDBCardBody>
                 </MDBCard>
             </MDBCol>

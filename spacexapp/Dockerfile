@@ -14,6 +14,7 @@ RUN npm install --silent
 RUN npm install react-scripts@3.4.1 -g --silent
 RUN npm install --save react-router-dom
 RUN npm install --save mdbreact
+RUN npm install --save react-youtube
 
 # add app
 COPY . ./
