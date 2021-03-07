@@ -5,7 +5,7 @@ const LaunchCard = (props) => {
     const launch = props.launch;
     return (
         <MDBCol>
-            <MDBCard style={{ width: "15rem", height: "460px"}}>
+            <MDBCard style={{ width: "15rem", height: "420px"}}>
                 <MDBCardImage className="img-fluid" src={launch.links.mission_patch} waves />
                 <MDBCardBody>
                     <MDBCardTitle>{launch.mission_name}</MDBCardTitle>
